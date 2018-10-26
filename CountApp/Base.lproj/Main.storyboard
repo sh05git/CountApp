@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Count" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-bw-GEK">
+                                <rect key="frame" x="87.5" y="83" width="200" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="JNe-3l-8n5"/>
+                                    <constraint firstAttribute="height" constant="83" id="ho1-LN-J5H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzl-3N-apr">
+                                <rect key="frame" x="263" y="492" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="XUG-su-Mmz"/>
+                                    <constraint firstAttribute="width" secondItem="dzl-3N-apr" secondAttribute="height" multiplier="1:1" id="fjm-7B-rSI"/>
+                                    <constraint firstAttribute="height" constant="75" id="kng-Iv-OHT"/>
+                                </constraints>
+                                <state key="normal" image="plus.jpg"/>
+                                <connections>
+                                    <action selector="plus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2L3-J0-eU6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVn-o2-J6R">
+                                <rect key="frame" x="150" y="492" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Ag5-Ne-dlA"/>
+                                    <constraint firstAttribute="height" constant="75" id="QMp-fR-oz0"/>
+                                    <constraint firstAttribute="width" secondItem="qVn-o2-J6R" secondAttribute="height" multiplier="1:1" id="wp6-Je-GxQ"/>
+                                </constraints>
+                                <state key="normal" image="ac.jpg"/>
+                                <connections>
+                                    <action selector="ac:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rVE-Eq-Nwx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua8-O4-2TR">
+                                <rect key="frame" x="37" y="492" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ua8-O4-2TR" secondAttribute="height" multiplier="1:1" id="RhA-cF-1tR"/>
+                                    <constraint firstAttribute="width" constant="75" id="Zqp-l0-my8"/>
+                                    <constraint firstAttribute="height" constant="75" id="mtR-hF-P2L"/>
+                                </constraints>
+                                <state key="normal" title="B" image="minus.jpg"/>
+                                <connections>
+                                    <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VIc-U8-vkf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qVn-o2-J6R" firstAttribute="leading" secondItem="ua8-O4-2TR" secondAttribute="trailing" constant="38" id="298-MS-mNY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qVn-o2-J6R" secondAttribute="bottom" constant="100" id="7LN-Xj-tIg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dzl-3N-apr" secondAttribute="bottom" constant="100" id="H3Y-4T-LPu"/>
+                            <constraint firstItem="sVL-bw-GEK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5t-y8-s9X"/>
+                            <constraint firstItem="qVn-o2-J6R" firstAttribute="top" relation="lessThanOrEqual" secondItem="sVL-bw-GEK" secondAttribute="bottom" constant="326" id="Z9C-Fc-2Mr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ua8-O4-2TR" secondAttribute="bottom" constant="100" id="cCg-Vm-vfC"/>
+                            <constraint firstItem="sVL-bw-GEK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="f8B-eU-ciS"/>
+                            <constraint firstItem="dzl-3N-apr" firstAttribute="leading" secondItem="qVn-o2-J6R" secondAttribute="trailing" constant="38" id="xDV-HR-ruv"/>
+                            <constraint firstItem="qVn-o2-J6R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xP9-js-uS4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="sVL-bw-GEK" id="a3F-tf-9kZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ac.jpg" width="176" height="180"/>
+        <image name="minus.jpg" width="186" height="184"/>
+        <image name="plus.jpg" width="176" height="176"/>
+    </resources>
+</document>
